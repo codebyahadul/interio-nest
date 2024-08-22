@@ -4,19 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>InterioNest</title>
     <!-- tailwind cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@200;400;500;700;800&display=swap');
-        body{
-            font-family:"Manrope", sans-serif;
+
+        body {
+            font-family: "Manrope", sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <h1 class="text-5xl font-bold">testing ...</h1>
+    <nav class="container mx-auto flex justify-between items-center my-5 md:my-8 px-3 md:px-5">
+        <div>
+            <a href="#" class="text-xl md:text-2xl lg:text-3xl font-bold">InterioNest</a>
+        </div>
+        <div class="hidden md:block">
+            <ul class="flex items-center gap-8 text-xs md:text-sm lg:text-lg">
+                <li class="font-semibold cursor-pointer">Home</li>
+                <li class="cursor-pointer">Services</li>
+                <li class="cursor-pointer">Portfolio</li>
+                <li class="cursor-pointer">Blogs</li>
+                <li class="cursor-pointer">Contact Us</li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-1 md:gap-3 lg:gap-5">
+            <div class="p-1 md:p-2 lg:p-3 cursor-pointer flex items-center justify-center rounded-full border">
+                <i class="fa-solid fa-magnifying-glass text-xs md:text-sm lg:text-lg"></i>
+            </div>
+            <div class="p-1 md:p-2 lg:p-3 cursor-pointer flex items-center justify-center rounded-full border">
+                <i class="fa-solid fa-basket-shopping text-xs md:text-sm lg:text-lg"></i>
+            </div>
+            <button class="text-xs md:text-sm lg:text-lg font-bold px-2 md:px-3 lg:px-5 py-2 rounded-full bg-green-300">Book Consult <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></button>
+        </div>
+    </nav>
 </body>
 
 </html>
