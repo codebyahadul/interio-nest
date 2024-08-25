@@ -57,8 +57,15 @@
                         </div>
                     </button>
                 </div>
-                <div class="block lg:hidden cursor-pointer">
+                <div onclick="handleMenu()" class="block lg:hidden cursor-pointer relative">
                     <i class="fa-solid fa-bars"></i>
+                    <ul id="menu-dropdown" class="space-y-2 rounded-md text-xs md:text-sm lg:text-lg px-5 py-2 bg-gray-300 absolute -left-20 hidden">
+                        <li class="font-semibold cursor-pointer">Home</li>
+                        <li class="cursor-pointer">Services</li>
+                        <li class="cursor-pointer">Portfolio</li>
+                        <li class="cursor-pointer">Blogs</li>
+                        <li class="cursor-pointer">Contact Us</li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -452,7 +459,8 @@
                 <p class="text-xs md:text-sm lg:text-lg w-full md:w-8/12 lg:w-1/2 mx-auto text-center text-[#737373]">
                     The barn house captivates with its blend of rustic charm and modern sophistication, featuring
                     weathered wood, sleek metal accents.</p>
-                <ul class="flex items-center justify-center gap-5 md:gap-10 lg:gap-20 opacity-90 text-xs md:text-sm lg:text-lg text-[#E9E9E9] py-5">
+                <ul
+                    class="flex items-center justify-center gap-5 md:gap-10 lg:gap-20 opacity-90 text-xs md:text-sm lg:text-lg text-[#E9E9E9] py-5">
                     <li class="font-semibold cursor-pointer">Home</li>
                     <li class="cursor-pointer">Services</li>
                     <li class="cursor-pointer">Portfolio</li>
@@ -471,6 +479,13 @@
 
         </div>
     </footer>
+
+    <script>
+        const dropdown = document.getElementById('menu-dropdown')
+        const handleMenu = () => {
+            dropdown.classList.toggle('hidden');
+        }
+    </script>
 </body>
 
 </html>
